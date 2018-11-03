@@ -178,6 +178,7 @@ syn keyword glslQualifier centroid varying
 syn keyword glslQualifier coherent
 syn keyword glslQualifier column_major
 syn keyword glslQualifier const
+syn keyword glslQualifier constant_id
 syn keyword glslQualifier cw
 syn keyword glslQualifier depth_any
 syn keyword glslQualifier depth_greater
@@ -217,6 +218,7 @@ syn keyword glslQualifier point_mode
 syn keyword glslQualifier points
 syn keyword glslQualifier precise
 syn keyword glslQualifier precision
+syn keyword glslQualifier push_constant
 syn keyword glslQualifier quads
 syn keyword glslQualifier r11f_g11f_b10f
 syn keyword glslQualifier r16
@@ -261,6 +263,7 @@ syn keyword glslQualifier rgba8i
 syn keyword glslQualifier rgba8ui
 syn keyword glslQualifier row_major
 syn keyword glslQualifier sample
+syn keyword glslQualifier set
 syn keyword glslQualifier shared
 syn keyword glslQualifier smooth
 syn keyword glslQualifier std140
@@ -392,6 +395,7 @@ syn keyword glslBuiltinVariable gl_FrontSecondaryColor
 syn keyword glslBuiltinVariable gl_GlobalInvocationID
 syn keyword glslBuiltinVariable gl_HelperInvocation
 syn keyword glslBuiltinVariable gl_InstanceID
+syn keyword glslBuiltinVariable gl_InstanceIndex
 syn keyword glslBuiltinVariable gl_InvocationID
 syn keyword glslBuiltinVariable gl_Layer
 syn keyword glslBuiltinVariable gl_LightModel
@@ -450,6 +454,7 @@ syn keyword glslBuiltinVariable gl_TextureMatrixInverseTranspose
 syn keyword glslBuiltinVariable gl_TextureMatrixTranspose
 syn keyword glslBuiltinVariable gl_Vertex
 syn keyword glslBuiltinVariable gl_VertexID
+syn keyword glslBuiltinVariable gl_VertexIndex
 syn keyword glslBuiltinVariable gl_ViewportIndex
 syn keyword glslBuiltinVariable gl_WorkGroupID
 syn keyword glslBuiltinVariable gl_WorkGroupSize
