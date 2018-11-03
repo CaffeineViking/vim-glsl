@@ -1,11 +1,11 @@
 # vim-glsl
 
-Vim syntax highlighting for OpenGL Shading Language
+Vim syntax highlighting for the OpenGL Shading Language with support for syntax in the `GL_KHR_vulkan_glsl` extension. Support for `#include` directives is also included, since those are available in `glslc`, and is very common to use anyway.
 
-GLSL synatx highlighting is supported for:
+GLSL syntax highlighting adds support for:
 
-- files with extensions supported by [Khronos reference compiler](https://github.com/KhronosGroup/glslang): `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`
-- files with `.glsl` extension
+- files with extensions supported by the [Khronos reference compiler](https://github.com/KhronosGroup/glslang): `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`
+- files with the `.glsl` extension
 - HTML `<script>` tags with `type` set to `x-shader-vertex` or `x-shader-fragment`
 
 If you need support highlighting in files with other extensions (e.g. `.vs` and `.fs`) you can add it using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
@@ -25,15 +25,16 @@ or using [modeline](http://vimdoc.sourceforge.net/htmldoc/options.html#modeline)
 
 - OpenGL Shading Language: all versions from 1.10 to 4.50
 - OpenGL ES Shading Language: versions 1.00 and 3.00
+- The Vulkan extensions found in `GL_KHR_vulkan_glsl` too!
 
 ## Installation
 
 #### Using [Vundle](https://github.com/gmarik/vundle)
 
-Add to your `vimrc`:
+Add this to your `vimrc`:
 
 ```viml
-Plugin 'tikhomirov/vim-glsl'
+Plugin 'CaffeineViking/vim-glsl'
 ```
 
 Then reload your `vimrc` and run `:PluginInstall`.
@@ -42,7 +43,7 @@ Then reload your `vimrc` and run `:PluginInstall`.
 
 ```sh
 $ cd ~/.vim/bundle
-$ git clone https://github.com/tikhomirov/vim-glsl
+$ git clone https://github.com/CaffeineViking/vim-glsl
 ```
 
 Then run `:Helptags` to generate help tags.
