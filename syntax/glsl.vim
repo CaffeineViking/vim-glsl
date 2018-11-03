@@ -20,7 +20,7 @@ syn region  glslPreCondit       start="^\s*#\s*\(if\|ifdef\|ifndef\|else\|elif\|
 syn region  glslDefine          start="^\s*#\s*\(define\|undef\)" skip="\\$" end="$" keepend
 syn keyword glslTokenConcat     ##
 syn keyword glslPredefinedMacro __LINE__ __FILE__ __VERSION__ GL_ES
-syn region  glslPreProc         start="^\s*#\s*\(error\|pragma\|extension\|version\|line\)" skip="\\$" end="$" keepend
+syn region  glslPreProc         start="^\s*#\s*\(error\|pragma\|extension\|version\|line\|include\)" skip="\\$" end="$" keepend
 
 " Boolean Constants
 syn keyword glslBoolean true false
