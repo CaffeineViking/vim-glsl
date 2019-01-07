@@ -277,6 +277,7 @@ syn keyword glslQualifier smooth
 syn keyword glslQualifier std140
 syn keyword glslQualifier std430
 syn keyword glslQualifier stream
+syn keyword glslQualifier subroutine
 syn keyword glslQualifier triangle_strip
 syn keyword glslQualifier triangles
 syn keyword glslQualifier triangles_adjacency
