@@ -103,6 +103,8 @@ syn keyword glslType isampler3D
 syn keyword glslType isamplerBuffer
 syn keyword glslType isamplerCube
 syn keyword glslType isamplerCubeArray
+syn keyword glslType isubpassInput
+syn keyword glslType isubpassInputMS
 syn keyword glslType ivec2
 syn keyword glslType ivec3
 syn keyword glslType ivec4
@@ -136,6 +138,8 @@ syn keyword glslType samplerCube
 syn keyword glslType samplerCubeArray
 syn keyword glslType samplerCubeArrayShadow
 syn keyword glslType samplerCubeShadow
+syn keyword glslType subpassInput
+syn keyword glslType subpassInputMS
 syn keyword glslType uimage1D
 syn keyword glslType uimage1DArray
 syn keyword glslType uimage2D
@@ -159,6 +163,8 @@ syn keyword glslType usampler3D
 syn keyword glslType usamplerBuffer
 syn keyword glslType usamplerCube
 syn keyword glslType usamplerCubeArray
+syn keyword glslType usubpassInput
+syn keyword glslType usubpassInputMS
 syn keyword glslType uvec2
 syn keyword glslType uvec3
 syn keyword glslType uvec4
@@ -179,6 +185,7 @@ syn keyword glslQualifier coherent
 syn keyword glslQualifier column_major
 syn keyword glslQualifier const
 syn keyword glslQualifier constant_id
+syn keyword glslQualifier component
 syn keyword glslQualifier cw
 syn keyword glslQualifier depth_any
 syn keyword glslQualifier depth_greater
@@ -193,6 +200,7 @@ syn keyword glslQualifier highp
 syn keyword glslQualifier in
 syn keyword glslQualifier index
 syn keyword glslQualifier inout
+syn keyword glslQualifier input_attachment_index
 syn keyword glslQualifier invariant
 syn keyword glslQualifier invocations
 syn keyword glslQualifier isolines
@@ -596,6 +604,7 @@ syn keyword glslBuiltinFunction sinh
 syn keyword glslBuiltinFunction smoothstep
 syn keyword glslBuiltinFunction sqrt
 syn keyword glslBuiltinFunction step
+syn keyword glslBuiltinFunction subpassLoad
 syn keyword glslBuiltinFunction tan
 syn keyword glslBuiltinFunction tanh
 syn keyword glslBuiltinFunction texelFetch
