@@ -4,9 +4,9 @@ This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GL
 
 If you find any missing keywords, please open a GitHub issue or create a PR and I'll get to work.
 
-It will automatically add syntax highlighting for files with extensions supported by [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
+It adds syntax highlighting for files with extensions supported by [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
 
-If you (for some reason) want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
+If you want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
 
 
 ```viml
@@ -39,7 +39,3 @@ $ git clone https://github.com/CaffeineViking/vim-glsl
 ```
 
 Then run `:Helptags` to generate help tags.
-
-#### Manual Installation
-
-Copy all files to your `$HOME/.vim` (`$HOME\vimfiles\` on Windows) directory.
