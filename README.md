@@ -1,10 +1,10 @@
 # vim-glsl
 
-This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` Vulkan syntax. It also adds support for `#include` directives, since those are also available in `glslc`. It also includes missing keywords and features which were "forgotten" in tikhomirov's fork, like the `subroutine` and `component` keywords.
+This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` Vulkan syntax. It also adds support for `#include` directives, since those are also available in `glslc`. It also includes missing keywords and features which were "forgotten" in tikhomirov's fork, like the `subroutine`, `component`, `sampler` keywords.
 
 If you find any missing keywords, please open a GitHub issue or create a PR and I'll get to work.
 
-It adds syntax highlighting for files with extensions supported by [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
+It adds syntax highlighting for files with extensions found in [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
 
 If you want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
 
