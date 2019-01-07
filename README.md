@@ -1,24 +1,10 @@
 # vim-glsl
 
-Vim syntax highlighting for the OpenGL Shading Language with support for syntax in the `GL_KHR_vulkan_glsl` extension. Support for `#include` directives is also included, since those are available in `glslc`, and is very common to use anyway.
+This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the extra `GL_KHR_vulkan_glsl` Vulkan syntax. It also adds support for `#include` directives, since those are also available in `glslc`. It also includes missing keywords and features which were "forgotten" in tikhomirov's fork, like the `subroutine` and `component` keywords. If you find any missing keywords, please open a GitHub issue or create a PR and I'll get to work. It will automatically add syntax highlighting for files with extensions supported by [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`. If you (for some reason) want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
 
-GLSL syntax highlighting adds support for:
-
-- files with extensions supported by the [Khronos reference compiler](https://github.com/KhronosGroup/glslang): `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`
-- files with the `.glsl` extension
-- HTML `<script>` tags with `type` set to `x-shader-vertex` or `x-shader-fragment`
-
-If you need support highlighting in files with other extensions (e.g. `.vs` and `.fs`) you can add it using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
 
 ```viml
-" in your .vimrc (_vimrc for Windows)
 autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
-```
-
-or using [modeline](http://vimdoc.sourceforge.net/htmldoc/options.html#modeline) in your shader files:
-
-```glsl
-// vim: set ft=glsl:
 ```
 
 ## Supported GLSL Versions
@@ -48,10 +34,6 @@ $ git clone https://github.com/CaffeineViking/vim-glsl
 
 Then run `:Helptags` to generate help tags.
 
-#### As part of [vim-polyglot](https://github.com/sheerun/vim-polyglot)
-
-This plugin contributes to [vim-polyglot](https://github.com/sheerun/vim-polyglot) language pack. Please refer to its [installation instructions](https://github.com/sheerun/vim-polyglot#installation) for more details.
-
-#### Manual
+#### Manual Installation
 
 Copy all files to your `$HOME/.vim` (`$HOME\vimfiles\` on Windows) directory.

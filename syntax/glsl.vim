@@ -1,5 +1,6 @@
-" Language: OpenGL Shading Language
-" Maintainer: Sergey Tikhomirov <sergey@tikhomirov.io>
+" Language: OpenGL Shading Language with GL_KHR_vulkan_glsl.
+" Maintainers: Sergey Tikhomirov  <sergey@tikhomirov.io>
+"              Erik S. V. Jansson <caffeineviking@gmail.com>
 
 if exists("b:current_syntax") && b:current_syntax == "glsl"
   finish
