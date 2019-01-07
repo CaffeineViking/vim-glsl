@@ -16,8 +16,17 @@ autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
 ## Supported GLSL Versions
 
 * OpenGL Shading Language: all versions from 1.10 to 4.50
+    * Added missing `component` layout qualifier
+    * Added missing `subroutine`
 * OpenGL ES Shading Language: versions 1.00 and 3.00
 * The Vulkan extensions found in `GL_KHR_vulkan_glsl` too:
+    * `shaderc`-style `#include` directives
+    * `constant_id` and `push_constant` layout qualifiers
+    * `gl_VertexIndex` and `gl_InstanceIndex`
+    * Ability to specify descriptor sets with `set` qualifier
+    * Support for the various `subpassInput` descriptors
+    * Ability to speicfy `input_attachment_index` in layout
+    * The `subpassLoad` built-in function for Vulkan
 
 ## Installation
 
