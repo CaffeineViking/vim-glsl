@@ -1,10 +1,10 @@
 # vim-glsl
 
-This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` Vulkan syntax. It also adds support for `#include` directives, since those are also available in `glslc`. It also includes missing keywords and features which were "forgotten" in tikhomirov's fork, like the `subroutine`, `component`, `sampler` keywords.
+This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` Vulkan syntax. It also adds support for `#include` directives, since those are also available in `glslc`. It also includes missing keywords and features which were "forgotten" in tikhomirov's fork, like the `subroutine`, `component` and `sampler` keywords.
 
 If you find any missing keywords, please open a GitHub issue or create a PR and I'll get to work.
 
-It adds syntax highlighting for files with extensions found in [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
+It adds syntax highlighting for files with extensions from [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
 
 If you want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
 
@@ -15,9 +15,9 @@ autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
 
 ## Supported GLSL Versions
 
-- OpenGL Shading Language: all versions from 1.10 to 4.50
-- OpenGL ES Shading Language: versions 1.00 and 3.00
-- The Vulkan extensions found in `GL_KHR_vulkan_glsl` too!
+* OpenGL Shading Language: all versions from 1.10 to 4.50
+* OpenGL ES Shading Language: versions 1.00 and 3.00
+* The Vulkan extensions found in `GL_KHR_vulkan_glsl` too:
 
 ## Installation
 
