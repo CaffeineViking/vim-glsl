@@ -1,10 +1,10 @@
 # vim-glsl
 
-This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` Vulkan syntax. It also adds support for `#include` directives, since those are also available in `glslc`. It also includes missing keywords and features which were "forgotten" in tikhomirov's fork, like the `subroutine`, `component` and `sampler` keywords.
+This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if it's non-standard), and are supports the syntax-flavour found in `glslc` and `shaderc`. It also includes many missing keywords which were "forgotten" in tikhomirov's original version, like the `subroutine` and `component` keywords available in GLSL 4.6.
 
-If you find any missing keywords, please open a GitHub issue or create a PR and I'll get to work.
+If you find anything missing, please open a GitHub issue or create a PR and I'll get to work.
 
-It adds syntax highlighting for files with extensions from [glslang](https://github.com/KhronosGroup/glslang): `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
+It applies syntax highlighting to the [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
 
 If you want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
 
@@ -15,7 +15,7 @@ autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
 
 ## Supported GLSL Versions
 
-* OpenGL Shading Language: all versions from 1.10 to 4.50
+* OpenGL Shading Language: all versions from 1.10 to 4.60
     * Added missing `component` layout qualifier
     * Added missing `subroutine`
 * OpenGL ES Shading Language: versions 1.00 and 3.00
@@ -27,6 +27,8 @@ autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
     * Support for the various `subpassInput` descriptors
     * Ability to speicfy `input_attachment_index` in layout
     * The `subpassLoad` built-in function for Vulkan
+    * Both the `imageBuffer` and `textureBuffer` descriptors
+    * And finally `sampler` and `samplerShadow`
 
 ## Installation
 
