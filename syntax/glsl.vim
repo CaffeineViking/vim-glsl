@@ -81,6 +81,7 @@ syn keyword glslType iimage3D
 syn keyword glslType iimageBuffer
 syn keyword glslType iimageCube
 syn keyword glslType iimageCubeArray
+syn keyword glslType imageBuffer
 syn keyword glslType image1D
 syn keyword glslType image1DArray
 syn keyword glslType image2D
@@ -121,6 +122,8 @@ syn keyword glslType mat4
 syn keyword glslType mat4x2
 syn keyword glslType mat4x3
 syn keyword glslType mat4x4
+syn keyword glslType sampler
+syn keyword glslType samplerShadow
 syn keyword glslType sampler1D
 syn keyword glslType sampler1DArray
 syn keyword glslType sampler1DArrayShadow
@@ -141,6 +144,7 @@ syn keyword glslType samplerCubeArrayShadow
 syn keyword glslType samplerCubeShadow
 syn keyword glslType subpassInput
 syn keyword glslType subpassInputMS
+syn keyword glslType textureBuffer
 syn keyword glslType uimage1D
 syn keyword glslType uimage1DArray
 syn keyword glslType uimage2D
