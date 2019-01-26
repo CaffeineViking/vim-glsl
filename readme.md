@@ -1,6 +1,6 @@
 # vim-glsl
 
-This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if it's non-standard), and are supports the syntax-flavour found in `glslc` and `shaderc`. It also includes many missing keywords which were "forgotten" in tikhomirov's original version, like the `subroutine` and `component` keywords available in GLSL 4.6.
+This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if it's non-standard), and supports the syntax-flavour found in `glslc` and `shaderc`. It also includes many missing keywords which were "forgotten" in tikhomirov's original version, like the `subroutine` and `component` keywords available in GLSL 4.6.
 
 If you find anything missing, please open a GitHub issue or create a PR and I'll get to work.
 
