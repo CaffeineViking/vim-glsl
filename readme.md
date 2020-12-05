@@ -1,25 +1,18 @@
 # vim-glsl
 
-This plugin provides Vim syntax highlighting for the OpenGL Shading Language (GLSL) along with the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if it's non-standard), and supports the syntax-flavour found in `glslc` and `shaderc`. It also includes many missing keywords which were "forgotten" in tikhomirov's original version, like the `subroutine` and `component` keywords available in GLSL 4.6 (even if they aren't used that much).
+This plugin adds OpenGL Shading Language (GLSL) syntax highlighting support to Vim. It supports everything in the standard GLSL 4.6 plus a few common KHR/EXT extensions. Among other things, it supports the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if they're technically non-standard). It fixes a few issues with tikhomirov's repository, such as the missing `subroutine` and `component` keywords that should be available in GLSL (even if they aren't used that much).
 
-If you find anything missing, please open a GitHub issue or create a PR and I'll get to work.
+If you find anything important missing, feel free to open an issue or (even better) create a PR. Please be aware that no vendor extensions will be accepted into this repository. If they're EXT or KHR extensions though, they are more than welcome! Please see the public [GLSL extensions](https://github.com/KhronosGroup/GLSL/tree/master/extensions) repo.
 
-It applies syntax highlighting to the [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, and `.comp`.
-
-If you want to support highlighting in files with other extensions (e.g. `.vs` or `.fs`) you can do so by using [autocommand](http://vimdoc.sourceforge.net/htmldoc/autocmd.html#:autocmd):
-
-
-```viml
-autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
-```
+It applies syntax highlighting to the following [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, `.comp`, `.rayg`, `.rayi`, `.raya`, `.rayh`, `.raym` (from `GL_EXT_ray_tracing`). `.mesh` will also be supported once/if we get a KHR/EXT extension for mesh shading :-)
 
 ## Supported GLSL Versions
 
 * OpenGL Shading Language: all versions from 1.10 to 4.60
     * Added missing `component` layout qualifier
-    * Added missing `subroutine`
-* OpenGL ES Shading Language: versions 1.00 and 3.00
-* The Vulkan extensions found in `GL_KHR_vulkan_glsl` too:
+    * Added missing `subroutine` from GLSL 4.6
+* OpenGL ES Shading Language: versions 1.00 and 3.00 (?)
+* The Vulkan GLSL extensions found in `GL_KHR_vulkan_glsl`:
     * `shaderc`-style `#include` directives
     * `constant_id` and `push_constant` layout qualifiers
     * `gl_VertexIndex` and `gl_InstanceIndex`
@@ -29,6 +22,13 @@ autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
     * The `subpassLoad` built-in function for Vulkan
     * Both the `imageBuffer` and `textureBuffer` descriptors
     * And finally `sampler` and `samplerShadow`
+* The following official [KHR/EXT extensions](https://github.com/KhronosGroup/GLSL/tree/master/extensions) from Khronos:
+    * `GL_KHR_memory_scope_semantics`
+    * `GL_KHR_shader_subgroup`
+    * `GLSL_EXT_fragment_shading_rate`
+    * `GLSL_EXT_ray_flags_primitive_culling`
+    * `GLSL_EXT_ray_query`
+    * `GLSL_EXT_ray_tracing`
 
 ## Installation
 
