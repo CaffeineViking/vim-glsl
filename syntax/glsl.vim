@@ -361,6 +361,9 @@ syn keyword glslQualifier shaderRecordEXT
 syn keyword glslQualifier r64i
 syn keyword glslQualifier r64ui
 
+" GL_EXT_scalar_block_layout
+syn keyword glslQualifier scalar
+
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
 syn keyword glslBuiltinConstant gl_ScopeDevice

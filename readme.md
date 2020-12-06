@@ -36,7 +36,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GL_EXT_device_group`
     - [x] `GL_EXT_multiview`
     - [x] `GL_EXT_nonuniform_qualifier`
-    - [ ] `GL_EXT_scalar_block_layout`
+    - [x] `GL_EXT_scalar_block_layout`
     - [ ] `GL_EXT_shader_16bit_storage`
     - [ ] `GL_EXT_shader_explicit_arithmetic_types`
     - [ ] `GL_EXT_shader_realtime_clock`
