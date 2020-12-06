@@ -223,6 +223,28 @@ syn keyword glslType u64imageCubeArray
 syn keyword glslType i64imageBuffer
 syn keyword glslType u64imageBuffer
 
+" GL_EXT_shader_16bit_storage
+syn keyword glslType int8_t
+syn keyword glslType i8vec2
+syn keyword glslType i8vec3
+syn keyword glslType i8vec4
+syn keyword glslType uint8_t
+syn keyword glslType u8vec2
+syn keyword glslType u8vec3
+syn keyword glslType u8vec4
+syn keyword glslType float16_t
+syn keyword glslType f16vec2
+syn keyword glslType f16vec3
+syn keyword glslType f16vec4
+syn keyword glslType int16_t
+syn keyword glslType i16vec2
+syn keyword glslType i16vec3
+syn keyword glslType i16vec4
+syn keyword glslType uint16_t
+syn keyword glslType u16vec2
+syn keyword glslType u16vec3
+syn keyword glslType u16vec4
+
 " Qualifiers
 syn keyword glslQualifier align
 syn keyword glslQualifier attribute
