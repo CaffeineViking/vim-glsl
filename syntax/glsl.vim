@@ -196,6 +196,7 @@ syn keyword glslQualifier depth_any
 syn keyword glslQualifier depth_greater
 syn keyword glslQualifier depth_less
 syn keyword glslQualifier depth_unchanged
+syn keyword glslQualifier devicecoherent
 syn keyword glslQualifier early_fragment_tests
 syn keyword glslQualifier equal_spacing
 syn keyword glslQualifier flat
@@ -220,6 +221,7 @@ syn keyword glslQualifier location
 syn keyword glslQualifier lowp
 syn keyword glslQualifier max_vertices
 syn keyword glslQualifier mediump
+syn keyword glslQualifier nonprivate
 syn keyword glslQualifier noperspective
 syn keyword glslQualifier offset
 syn keyword glslQualifier origin_upper_left
@@ -233,6 +235,7 @@ syn keyword glslQualifier precise
 syn keyword glslQualifier precision
 syn keyword glslQualifier push_constant
 syn keyword glslQualifier quads
+syn keyword glslQualifier queuefamilycoherent
 syn keyword glslQualifier r11f_g11f_b10f
 syn keyword glslQualifier r16
 syn keyword glslQualifier r16_snorm
@@ -282,6 +285,7 @@ syn keyword glslQualifier smooth
 syn keyword glslQualifier std140
 syn keyword glslQualifier std430
 syn keyword glslQualifier stream
+syn keyword glslQualifier subgroupcoherent
 syn keyword glslQualifier subroutine
 syn keyword glslQualifier triangle_strip
 syn keyword glslQualifier triangles
@@ -291,12 +295,30 @@ syn keyword glslQualifier varying
 syn keyword glslQualifier vertices
 syn keyword glslQualifier volatile
 syn keyword glslQualifier writeonly
+syn keyword glslQualifier workgroupcoherent
 syn keyword glslQualifier xfb_buffer
 syn keyword glslQualifier xfb_stride
 syn keyword glslQualifier xfb_offset
 
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
+syn keyword glslBuiltinConstant gl_ScopeDevice
+syn keyword glslBuiltinConstant gl_ScopeWorkgroup
+syn keyword glslBuiltinConstant gl_ScopeSubgroup
+syn keyword glslBuiltinConstant gl_ScopeInvocation
+syn keyword glslBuiltinConstant gl_ScopeQueueFamily
+syn keyword glslBuiltinConstant gl_SemanticsRelaxed
+syn keyword glslBuiltinConstant gl_SemanticsAcquire
+syn keyword glslBuiltinConstant gl_SemanticsRelease
+syn keyword glslBuiltinConstant gl_SemanticsAcquireRelease
+syn keyword glslBuiltinConstant gl_SemanticsMakeAvailable
+syn keyword glslBuiltinConstant gl_SemanticsMakeVisible
+syn keyword glslBuiltinConstant gl_SemanticsVolatile
+syn keyword glslBuiltinConstant gl_StorageSemanticsNone
+syn keyword glslBuiltinConstant gl_StorageSemanticsBuffer
+syn keyword glslBuiltinConstant gl_StorageSemanticsShared
+syn keyword glslBuiltinConstant gl_StorageSemanticsImage
+syn keyword glslBuiltinConstant gl_StorageSemanticsOutput
 syn keyword glslBuiltinConstant gl_MaxAtomicCounterBindings
 syn keyword glslBuiltinConstant gl_MaxAtomicCounterBufferSize
 syn keyword glslBuiltinConstant gl_MaxClipDistances
@@ -505,6 +527,8 @@ syn keyword glslBuiltinFunction atomicCounter
 syn keyword glslBuiltinFunction atomicCounterDecrement
 syn keyword glslBuiltinFunction atomicCounterIncrement
 syn keyword glslBuiltinFunction atomicExchange
+syn keyword glslBuiltinFunction atomicLoad
+syn keyword glslBuiltinFunction atomicStore
 syn keyword glslBuiltinFunction atomicMax
 syn keyword glslBuiltinFunction atomicMin
 syn keyword glslBuiltinFunction atomicOr
@@ -552,6 +576,8 @@ syn keyword glslBuiltinFunction imageAtomicAdd
 syn keyword glslBuiltinFunction imageAtomicAnd
 syn keyword glslBuiltinFunction imageAtomicCompSwap
 syn keyword glslBuiltinFunction imageAtomicExchange
+syn keyword glslBuiltinFunction imageAtomicLoad
+syn keyword glslBuiltinFunction imageAtomicStore
 syn keyword glslBuiltinFunction imageAtomicMax
 syn keyword glslBuiltinFunction imageAtomicMin
 syn keyword glslBuiltinFunction imageAtomicOr
