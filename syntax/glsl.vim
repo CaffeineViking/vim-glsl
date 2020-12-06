@@ -42,15 +42,15 @@ syn region  glslPreProc         start="^\s*#\s*\(error\|pragma\|extension\|versi
 syn keyword glslBoolean true false
 
 " Integer Numbers
-syn match glslDecimalInt display "\<\(0\|[1-9]\d*\)[uU]\?"
-syn match glslOctalInt   display "\<0\o\+[uU]\?"
-syn match glslHexInt     display "\<0[xX]\x\+[uU]\?"
+syn match glslDecimalInt display "\<\(0\|[1-9]\d*\)[uU]\?\([sS]\|[lL]\)\?"
+syn match glslOctalInt   display "\<0\o\+[uU]\?\([sS]\|[lL]\)\?"
+syn match glslHexInt     display "\<0[xX]\x\+[uU]\?\([sS]\|[lL]\)\?"
 
 " Float Numbers
-syn match glslFloat display "\<\d\+\.\([eE][+-]\=\d\+\)\=\(lf\|LF\|f\|F\)\="
-syn match glslFloat display "\<\.\d\+\([eE][+-]\=\d\+\)\=\(lf\|LF\|f\|F\)\="
-syn match glslFloat display "\<\d\+[eE][+-]\=\d\+\(lf\|LF\|f\|F\)\="
-syn match glslFloat display "\<\d\+\.\d\+\([eE][+-]\=\d\+\)\=\(lf\|LF\|f\|F\)\="
+syn match glslFloat display "\<\d\+\.\([eE][+-]\=\d\+\)\=\(lf\|LF\|f\|F\|hf\|HF\)\="
+syn match glslFloat display "\<\.\d\+\([eE][+-]\=\d\+\)\=\(lf\|LF\|f\|F\|hf\|HF\)\="
+syn match glslFloat display "\<\d\+[eE][+-]\=\d\+\(lf\|LF\|f\|F\|hf\|HF\)\="
+syn match glslFloat display "\<\d\+\.\d\+\([eE][+-]\=\d\+\)\=\(lf\|LF\|f\|F\|hf\|HF\)\="
 
 " Swizzles
 syn match glslSwizzle display /\.[xyzw]\{1,4\}\>/
@@ -244,6 +244,68 @@ syn keyword glslType uint16_t
 syn keyword glslType u16vec2
 syn keyword glslType u16vec3
 syn keyword glslType u16vec4
+
+" GL_EXT_shader_explicit_arithmetic_types
+syn keyword glslType float64_t
+syn keyword glslType f64vec2
+syn keyword glslType f64vec3
+syn keyword glslType f64vec4
+syn keyword glslType f64mat2
+syn keyword glslType f64mat3
+syn keyword glslType f64mat4
+syn keyword glslType f64mat2x2
+syn keyword glslType f64mat2x3
+syn keyword glslType f64mat2x4
+syn keyword glslType f64mat3x2
+syn keyword glslType f64mat3x3
+syn keyword glslType f64mat3x4
+syn keyword glslType f64mat4x2
+syn keyword glslType f64mat4x3
+syn keyword glslType f64mat4x4
+syn keyword glslType float32_t
+syn keyword glslType f32vec2
+syn keyword glslType f32vec3
+syn keyword glslType f32vec4
+syn keyword glslType f32mat2
+syn keyword glslType f32mat3
+syn keyword glslType f32mat4
+syn keyword glslType f32mat2x2
+syn keyword glslType f32mat2x3
+syn keyword glslType f32mat2x4
+syn keyword glslType f32mat3x2
+syn keyword glslType f32mat3x3
+syn keyword glslType f32mat3x4
+syn keyword glslType f32mat4x2
+syn keyword glslType f32mat4x3
+syn keyword glslType f32mat4x4
+syn keyword glslType f16mat2
+syn keyword glslType f16mat3
+syn keyword glslType f16mat4
+syn keyword glslType f16mat2x2
+syn keyword glslType f16mat2x3
+syn keyword glslType f16mat2x4
+syn keyword glslType f16mat3x2
+syn keyword glslType f16mat3x3
+syn keyword glslType f16mat3x4
+syn keyword glslType f16mat4x2
+syn keyword glslType f16mat4x3
+syn keyword glslType f16mat4x4
+syn keyword glslType int64_t
+syn keyword glslType i64vec2
+syn keyword glslType i64vec3
+syn keyword glslType i64vec4
+syn keyword glslType uint64_t
+syn keyword glslType u64vec2
+syn keyword glslType u64vec3
+syn keyword glslType u64vec4
+syn keyword glslType int32_t
+syn keyword glslType i32vec2
+syn keyword glslType i32vec3
+syn keyword glslType i32vec4
+syn keyword glslType uint32_t
+syn keyword glslType u32vec2
+syn keyword glslType u32vec3
+syn keyword glslType u32vec4
 
 " Qualifiers
 syn keyword glslQualifier align
@@ -935,6 +997,44 @@ syn keyword glslBuiltinFunction dependency_length
 
 " GL_EXT_nonuniform_qualifier
 syn keyword glslBuiltinFunction nonuniformEXT
+
+" GL_EXT_shader_explicit_arithmetic_types
+syn keyword glslBuiltinFunction pack64
+syn keyword glslBuiltinFunction pack32
+syn keyword glslBuiltinFunction pack16
+syn keyword glslBuiltinFunction unpack32
+syn keyword glslBuiltinFunction unpack16
+syn keyword glslBuiltinFunction unpack8
+syn keyword glslBuiltinFunction packInt2x32
+syn keyword glslBuiltinFunction packUint2x32
+syn keyword glslBuiltinFunction unpackInt2x32
+syn keyword glslBuiltinFunction unpackUint2x32
+syn keyword glslBuiltinFunction halfBitsToInt16
+syn keyword glslBuiltinFunction halfBitsToUInt16
+syn keyword glslBuiltinFunction floatBitsToInt
+syn keyword glslBuiltinFunction floatBitsToUint
+syn keyword glslBuiltinFunction doubleBitsToInt64
+syn keyword glslBuiltinFunction doubleBitsToUint64
+syn keyword glslBuiltinFunction float16BitsToInt16
+syn keyword glslBuiltinFunction float16BitsToUint16
+syn keyword glslBuiltinFunction int16BitsToHalf
+syn keyword glslBuiltinFunction uint16BitsToHalf
+syn keyword glslBuiltinFunction intBitsToFloat
+syn keyword glslBuiltinFunction uintBitsToFloat
+syn keyword glslBuiltinFunction int64BitsToDouble
+syn keyword glslBuiltinFunction uint64BitsToDouble
+syn keyword glslBuiltinFunction int16BitsToFloat16
+syn keyword glslBuiltinFunction uint16BitsToFloat16
+syn keyword glslBuiltinFunction packFloat2x16
+syn keyword glslBuiltinFunction unpackFloat2x16
+syn keyword glslBuiltinFunction packInt2x16
+syn keyword glslBuiltinFunction packInt4x16
+syn keyword glslBuiltinFunction packUint2x16
+syn keyword glslBuiltinFunction packUint4x16
+syn keyword glslBuiltinFunction unpackInt2x16
+syn keyword glslBuiltinFunction unpackInt4x16
+syn keyword glslBuiltinFunction unpackUint2x16
+syn keyword glslBuiltinFunction unpackUint4x16
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
