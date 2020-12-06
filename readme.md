@@ -28,9 +28,13 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     * `GLSL_EXT_ray_query`
     * `GLSL_EXT_ray_flags_primitive_culling`
     * `GLSL_EXT_fragment_shading_rate`
+    * `GLSL_EXT_shader_image_int64`
     * `GL_EXT_control_flow_attributes`
     * `GL_EXT_device_group`
     * `GL_EXT_multiview`
+    * `GL_EXT_nonuniform_qualifier`
+    * `GL_EXT_shader_16bit_storage`
+    * `GL_EXT_shader_explicit_arithmetic_types`
 
 ## Installation
 
