@@ -540,6 +540,7 @@ syn keyword glslBuiltinFunction bitfieldInsert
 syn keyword glslBuiltinFunction bitfieldReverse
 syn keyword glslBuiltinFunction ceil
 syn keyword glslBuiltinFunction clamp
+syn keyword glslBuiltinFunction controlBarrier
 syn keyword glslBuiltinFunction cos
 syn keyword glslBuiltinFunction cosh
 syn keyword glslBuiltinFunction cross
