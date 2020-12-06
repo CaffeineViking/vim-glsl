@@ -6,7 +6,7 @@ If you find anything important missing, feel free to open an issue or (even bett
 
 It applies syntax highlighting to the following [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, `.comp`, `.rayg`, `.rayi`, `.raya`, `.rayh`, `.raym` (from `GL_EXT_ray_tracing`). `.mesh` will also be supported once/if we get a KHR/EXT extension for mesh shading :-)
 
-## Supported GLSL Versions
+## Supported
 
 * OpenGL Shading Language: all versions from 1.10 to 4.60
     * Added missing `component` layout qualifier
