@@ -399,6 +399,12 @@ syn keyword glslBuiltinConstant gl_MaxVertexUniformVectors
 syn keyword glslBuiltinConstant gl_MaxViewports
 syn keyword glslBuiltinConstant gl_MinProgramTexelOffset
 
+" GLSL_EXT_fragment_shading_rate
+syn keyword glslBuiltinConstant gl_ShadingRateFlag2VerticalPixelsEXT
+syn keyword glslBuiltinConstant gl_ShadingRateFlag4VerticalPixelsEXT
+syn keyword glslBuiltinConstant gl_ShadingRateFlag2HorizontalPixelsEXT
+syn keyword glslBuiltinConstant gl_ShadingRateFlag4HorizontalPixelsEXT
+
 " Built-in Variables
 syn keyword glslBuiltinVariable gl_BackColor
 syn keyword glslBuiltinVariable gl_BackLightModelProduct
@@ -509,6 +515,10 @@ syn keyword glslBuiltinVariable gl_out
 " GLSL_EXT_fragment_invocation_density
 syn keyword glslBuiltinVariable gl_FragSizeEXT
 syn keyword glslBuiltinVariable gl_FragInvocationCountEXT
+
+" GLSL_EXT_fragment_shading_rate
+syn keyword glslBuiltinVariable gl_ShadingRateEXT
+syn keyword glslBuiltinVariable gl_PrimitiveShadingRateEXT
 
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
