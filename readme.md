@@ -24,6 +24,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     * And finally `sampler` and `samplerShadow`
 * The following official KHR/EXT extensions are supported:
     * `GL_KHR_shader_subgroup`
+    * `GL_KHR_memory_scope_semantics`
     * `GLSL_EXT_ray_tracing`
     * `GLSL_EXT_ray_query`
     * `GLSL_EXT_ray_flags_primitive_culling`
