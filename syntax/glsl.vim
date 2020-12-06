@@ -628,6 +628,9 @@ syn keyword glslBuiltinVariable gl_ObjectToWorld3x4EXT
 " GL_EXT_device_group
 syn keyword glslBuiltinVariable gl_DeviceIndex
 
+" GL_EXT_multiview
+syn keyword glslBuiltinVariable gl_ViewIndex
+
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
 syn keyword glslBuiltinFunction EmitVertex
