@@ -1,7 +1,7 @@
 The MIT License (MIT)
 
 Copyright (c) 2013-2017 Sergey Tikhomirov,
-Copyright (c) 2018-2019 Erik S. V. Jansson
+Copyright (c) 2018-2021 Erik S. V. Jansson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
