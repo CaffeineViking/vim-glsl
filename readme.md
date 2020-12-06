@@ -9,36 +9,39 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
 ## Supported
 
 * OpenGL Shading Language: all versions from 1.10 to 4.60
-    * Added missing `component` layout qualifier
-    * Added missing `subroutine` from GLSL 4.6
+    - [x] Added missing `component` layout qualifier
+    - [x] Added missing `subroutine` from GLSL 4.6
 * OpenGL ES Shading Language: versions 1.00 and 3.00
 * The Vulkan GLSL extensions found in `GL_KHR_vulkan_glsl`:
-    * `shaderc`-style `#include` directives
-    * `constant_id` and `push_constant` layout qualifiers
-    * `gl_VertexIndex` and `gl_InstanceIndex`
-    * Ability to specify descriptor sets with `set` qualifier
-    * Support for the various `subpassInput` descriptors
-    * Ability to speicfy `input_attachment_index` in layout
-    * The `subpassLoad` built-in function for Vulkan
-    * Both the `imageBuffer` and `textureBuffer` descriptors
-    * And finally `sampler` and `samplerShadow`
+    - [x] `shaderc`-style `#include` directives
+    - [x] `constant_id` and `push_constant` layout qualifiers
+    - [x] `gl_VertexIndex` and `gl_InstanceIndex`
+    - [x] Ability to specify descriptor sets with `set` qualifier
+    - [x] Support for the various `subpassInput` descriptors
+    - [x] Ability to speicfy `input_attachment_index` in layout
+    - [x] The `subpassLoad` built-in function for Vulkan
+    - [x] Both the `imageBuffer` and `textureBuffer` descriptors
+    - [x] And finally `sampler` and `samplerShadow`
 * The following official KHR/EXT extensions are supported:
-    * `GL_KHR_shader_subgroup`
-    * `GL_KHR_memory_scope_semantics`
-    * `GLSL_EXT_ray_tracing`
-    * `GLSL_EXT_ray_query`
-    * `GLSL_EXT_ray_flags_primitive_culling`
-    * `GLSL_EXT_fragment_shading_rate`
-    * `GLSL_EXT_shader_image_int64`
-    * `GL_EXT_control_flow_attributes`
-    * `GL_EXT_device_group`
-    * `GL_EXT_multiview`
-    * `GL_EXT_nonuniform_qualifier`
-    * `GL_EXT_subgroupuniform_qualifier`
-    * `GL_EXT_scalar_block_layout`
-    * `GL_EXT_shader_16bit_storage`
-    * `GL_EXT_shader_explicit_arithmetic_types`
-    * `GL_EXT_shader_realtime_clock`
+    - [ ] `GL_KHR_memory_scope_semantics`
+    - [ ] `GL_KHR_shader_subgroup`
+    - [x] `GL_KHR_vulkan_glsl`
+    - [ ] `GLSL_EXT_fragment_invocation_density`
+    - [ ] `GLSL_EXT_fragment_shading_rate`
+    - [ ] `GLSL_EXT_ray_flags_primitive_culling`
+    - [ ] `GLSL_EXT_ray_query`
+    - [ ] `GLSL_EXT_ray_tracing`
+    - [ ] `GLSL_EXT_shader_image_int64`
+    - [ ] `GLSL_EXT_shader_subgroup_extended_types`
+    - [ ] `GL_EXT_control_flow_attributes`
+    - [ ] `GL_EXT_device_group`
+    - [ ] `GL_EXT_multiview`
+    - [ ] `GL_EXT_nonuniform_qualifier`
+    - [ ] `GL_EXT_scalar_block_layout`
+    - [ ] `GL_EXT_shader_16bit_storage`
+    - [ ] `GL_EXT_shader_explicit_arithmetic_types`
+    - [ ] `GL_EXT_shader_realtime_clock`
+    - [ ] `GL_EXT_subgroupuniform_qualifier`
 
 ## Installation
 
