@@ -998,6 +998,9 @@ syn keyword glslBuiltinFunction dependency_length
 " GL_EXT_nonuniform_qualifier
 syn keyword glslBuiltinFunction nonuniformEXT
 
+" GL_EXT_subgroupuniform_qualifier
+syn keyword glslBuiltinFunction subgroupuniformEXT
+
 " GL_EXT_shader_explicit_arithmetic_types
 syn keyword glslBuiltinFunction pack64
 syn keyword glslBuiltinFunction pack32
