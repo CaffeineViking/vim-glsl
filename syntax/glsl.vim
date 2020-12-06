@@ -7,13 +7,25 @@ if exists("b:current_syntax") && b:current_syntax == "glsl"
 endif
 
 " Statements
+syn match glslStatement '\[\['
 syn keyword glslConditional if else switch case default
 syn keyword glslRepeat      for while do
 syn keyword glslStatement   discard return break continue
+syn match glslStatement '\]\]'
 
 " GLSL_EXT_ray_tracing
 syn keyword glslStatement ignoreIntersectionEXT
 syn keyword glslStatement terminateRayEXT
+
+" GL_EXT_control_flow_attributes
+syn keyword glslStatement unroll
+syn keyword glslStatement dont_unroll
+syn keyword glslStatement loop
+syn keyword glslStatement dependency_infinite
+syn keyword glslStatement dependency_length
+syn keyword glslStatement flatten
+syn keyword glslStatement dont_flatten
+syn keyword glslStatement branch
 
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
