@@ -178,6 +178,10 @@ syn keyword glslType vec3
 syn keyword glslType vec4
 syn keyword glslType void
 
+" GLSL_EXT_ray_query
+syn keyword glslType accelerationStructureEXT
+syn keyword glslType rayQueryEXT
+
 " Qualifiers
 syn keyword glslQualifier align
 syn keyword glslQualifier attribute
@@ -411,6 +415,22 @@ syn keyword glslBuiltinConstant gl_ShadingRateFlag4HorizontalPixelsEXT
 " GLSL_EXT_ray_flags_primitive_culling
 syn keyword glslBuiltinConstant gl_RayFlagsSkipTrianglesEXT
 syn keyword glslBuiltinConstant gl_RayFlagsSkipAABBEXT
+
+" GLSL_EXT_ray_query
+syn keyword glslBuiltinConstant gl_RayFlagsNoneEXT
+syn keyword glslBuiltinConstant gl_RayFlagsOpaqueEXT
+syn keyword glslBuiltinConstant gl_RayFlagsNoOpaqueEXT
+syn keyword glslBuiltinConstant gl_RayFlagsTerminateOnFirstHitEXT
+syn keyword glslBuiltinConstant gl_RayFlagsSkipClosestHitShaderEXT
+syn keyword glslBuiltinConstant gl_RayFlagsCullBackFacingTrianglesEXT
+syn keyword glslBuiltinConstant gl_RayFlagsCullFrontFacingTrianglesEXT
+syn keyword glslBuiltinConstant gl_RayFlagsCullOpaqueEXT
+syn keyword glslBuiltinConstant gl_RayFlagsCullNoOpaqueEXT
+syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionNoneEXT
+syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionTriangleEXT
+syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionGeneratedEXT
+syn keyword glslBuiltinConstant gl_RayQueryCandidateIntersectionTriangleEXT
+syn keyword glslBuiltinConstant gl_RayQueryCandidateIntersectionAABBEXT
 
 " Built-in Variables
 syn keyword glslBuiltinVariable gl_BackColor
@@ -771,6 +791,31 @@ syn keyword glslBuiltinFunction unpackSnorm4x8
 syn keyword glslBuiltinFunction unpackUnorm2x16
 syn keyword glslBuiltinFunction unpackUnorm4x8
 syn keyword glslBuiltinFunction usubBorrow
+
+" GLSL_EXT_ray_query
+syn keyword glslBuiltinFunction rayQueryInitializeEXT
+syn keyword glslBuiltinFunction rayQueryProceedEXT
+syn keyword glslBuiltinFunction rayQueryTerminateEXT
+syn keyword glslBuiltinFunction rayQueryGenerateIntersectionEXT
+syn keyword glslBuiltinFunction rayQueryConfirmIntersectionEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionTypeEXT
+syn keyword glslBuiltinFunction rayQueryGetRayTMinEXT
+syn keyword glslBuiltinFunction rayQueryGetRayFlagsEXT
+syn keyword glslBuiltinFunction rayQueryGetWorldRayOriginEXT
+syn keyword glslBuiltinFunction rayQueryGetWorldRayDirectionEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionTEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionInstanceCustomIndexEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionInstanceIdEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionInstanceShaderBindingTableRecordOffsetEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionGeometryIndexEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionPrimitiveIndexEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionBarycentricsEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionFrontFaceEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionCandidateAABBOpaqueEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionObjectRayDirectionEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionObjectRayOriginEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionObjectToWorldEXT
+syn keyword glslBuiltinFunction rayQueryGetIntersectionWorldToObjectEXT
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
