@@ -41,6 +41,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GL_EXT_shader_explicit_arithmetic_types`
     - [x] `GL_EXT_shader_realtime_clock`
     - [x] `GL_EXT_subgroupuniform_qualifier`
+* `texture2D` is highlighted as a type instead of a function
 
 ## Installation
 
