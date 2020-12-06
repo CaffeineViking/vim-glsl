@@ -30,7 +30,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GLSL_EXT_fragment_shading_rate`
     - [x] `GLSL_EXT_ray_flags_primitive_culling`
     - [x] `GLSL_EXT_ray_query`
-    - [ ] `GLSL_EXT_ray_tracing`
+    - [x] `GLSL_EXT_ray_tracing`
     - [ ] `GLSL_EXT_shader_image_int64`
     - [ ] `GLSL_EXT_shader_subgroup_extended_types`
     - [ ] `GL_EXT_control_flow_attributes`

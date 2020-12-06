@@ -11,6 +11,10 @@ syn keyword glslConditional if else switch case default
 syn keyword glslRepeat      for while do
 syn keyword glslStatement   discard return break continue
 
+" GLSL_EXT_ray_tracing
+syn keyword glslStatement ignoreIntersectionEXT
+syn keyword glslStatement terminateRayEXT
+
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
 syn region  glslCommentL start="//" skip="\\$" end="$" keepend contains=glslTodo,@Spell
@@ -179,8 +183,10 @@ syn keyword glslType vec4
 syn keyword glslType void
 
 " GLSL_EXT_ray_query
-syn keyword glslType accelerationStructureEXT
 syn keyword glslType rayQueryEXT
+
+" GLSL_EXT_ray_tracing
+syn keyword glslType accelerationStructureEXT
 
 " Qualifiers
 syn keyword glslQualifier align
@@ -307,6 +313,15 @@ syn keyword glslQualifier xfb_offset
 " GLSL_EXT_ray_flags_primitive_culling
 syn keyword glslQualifier primitive_culling
 
+" GLSL_EXT_ray_tracing
+syn keyword glslQualifier shadercallcoherent
+syn keyword glslQualifier rayPayloadEXT
+syn keyword glslQualifier rayPayloadInEXT
+syn keyword glslQualifier hitAttributeEXT
+syn keyword glslQualifier callableDataEXT
+syn keyword glslQualifier callableDataInEXT
+syn keyword glslQualifier shaderRecordEXT
+
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
 syn keyword glslBuiltinConstant gl_ScopeDevice
@@ -417,6 +432,13 @@ syn keyword glslBuiltinConstant gl_RayFlagsSkipTrianglesEXT
 syn keyword glslBuiltinConstant gl_RayFlagsSkipAABBEXT
 
 " GLSL_EXT_ray_query
+syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionNoneEXT
+syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionTriangleEXT
+syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionGeneratedEXT
+syn keyword glslBuiltinConstant gl_RayQueryCandidateIntersectionTriangleEXT
+syn keyword glslBuiltinConstant gl_RayQueryCandidateIntersectionAABBEXT
+
+" GLSL_EXT_ray_tracing
 syn keyword glslBuiltinConstant gl_RayFlagsNoneEXT
 syn keyword glslBuiltinConstant gl_RayFlagsOpaqueEXT
 syn keyword glslBuiltinConstant gl_RayFlagsNoOpaqueEXT
@@ -426,11 +448,8 @@ syn keyword glslBuiltinConstant gl_RayFlagsCullBackFacingTrianglesEXT
 syn keyword glslBuiltinConstant gl_RayFlagsCullFrontFacingTrianglesEXT
 syn keyword glslBuiltinConstant gl_RayFlagsCullOpaqueEXT
 syn keyword glslBuiltinConstant gl_RayFlagsCullNoOpaqueEXT
-syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionNoneEXT
-syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionTriangleEXT
-syn keyword glslBuiltinConstant gl_RayQueryCommittedIntersectionGeneratedEXT
-syn keyword glslBuiltinConstant gl_RayQueryCandidateIntersectionTriangleEXT
-syn keyword glslBuiltinConstant gl_RayQueryCandidateIntersectionAABBEXT
+syn keyword glslBuiltinConstant gl_HitKindFrontFacingTriangleEXT
+syn keyword glslBuiltinConstant gl_HitKindBackFacingTriangleEXT
 
 " Built-in Variables
 syn keyword glslBuiltinVariable gl_BackColor
@@ -546,6 +565,25 @@ syn keyword glslBuiltinVariable gl_FragInvocationCountEXT
 " GLSL_EXT_fragment_shading_rate
 syn keyword glslBuiltinVariable gl_ShadingRateEXT
 syn keyword glslBuiltinVariable gl_PrimitiveShadingRateEXT
+
+" GLSL_EXT_ray_tracing
+syn keyword glslBuiltinVariable gl_LaunchIDEXT
+syn keyword glslBuiltinVariable gl_LaunchSizeEXT
+syn keyword glslBuiltinVariable gl_InstanceCustomIndexEXT
+syn keyword glslBuiltinVariable gl_GeometryIndexEXT
+syn keyword glslBuiltinVariable gl_WorldRayOriginEXT
+syn keyword glslBuiltinVariable gl_WorldRayDirectionEXT
+syn keyword glslBuiltinVariable gl_ObjectRayOriginEXT
+syn keyword glslBuiltinVariable gl_ObjectRayDirectionEXT
+syn keyword glslBuiltinVariable gl_RayTminEXT
+syn keyword glslBuiltinVariable gl_RayTmaxEXT
+syn keyword glslBuiltinVariable gl_IncomingRayFlagsEXT
+syn keyword glslBuiltinVariable gl_HitTEXT
+syn keyword glslBuiltinVariable gl_HitKindEXT
+syn keyword glslBuiltinVariable gl_ObjectToWorldEXT
+syn keyword glslBuiltinVariable gl_WorldToObjectEXT
+syn keyword glslBuiltinVariable gl_WorldToObject3x4EXT
+syn keyword glslBuiltinVariable gl_ObjectToWorld3x4EXT
 
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
@@ -816,6 +854,11 @@ syn keyword glslBuiltinFunction rayQueryGetIntersectionObjectRayDirectionEXT
 syn keyword glslBuiltinFunction rayQueryGetIntersectionObjectRayOriginEXT
 syn keyword glslBuiltinFunction rayQueryGetIntersectionObjectToWorldEXT
 syn keyword glslBuiltinFunction rayQueryGetIntersectionWorldToObjectEXT
+
+" GLSL_EXT_ray_tracing
+syn keyword glslBuiltinFunction traceRayEXT
+syn keyword glslBuiltinFunction reportIntersectionEXT
+syn keyword glslBuiltinFunction executeCallableEXT
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
