@@ -33,7 +33,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GLSL_EXT_ray_tracing`
     - [x] `GLSL_EXT_shader_image_int64`
     - [x] `GL_EXT_control_flow_attributes`
-    - [ ] `GL_EXT_device_group`
+    - [x] `GL_EXT_device_group`
     - [ ] `GL_EXT_multiview`
     - [ ] `GL_EXT_nonuniform_qualifier`
     - [ ] `GL_EXT_scalar_block_layout`
