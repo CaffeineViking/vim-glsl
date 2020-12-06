@@ -1036,6 +1036,10 @@ syn keyword glslBuiltinFunction unpackInt4x16
 syn keyword glslBuiltinFunction unpackUint2x16
 syn keyword glslBuiltinFunction unpackUint4x16
 
+" GL_EXT_shader_realtime_clock
+syn keyword glslBuiltinFunction clockRealtime2x32EXT
+syn keyword glslBuiltinFunction clockRealtimeEXT
+
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
 hi def link glslStatement       Statement
