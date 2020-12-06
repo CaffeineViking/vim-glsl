@@ -506,6 +506,10 @@ syn keyword glslBuiltinVariable gl_WorkGroupSize
 syn keyword glslBuiltinVariable gl_in
 syn keyword glslBuiltinVariable gl_out
 
+" GLSL_EXT_fragment_invocation_density
+syn keyword glslBuiltinVariable gl_FragSizeEXT
+syn keyword glslBuiltinVariable gl_FragInvocationCountEXT
+
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
 syn keyword glslBuiltinFunction EmitVertex
