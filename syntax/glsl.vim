@@ -22,7 +22,6 @@ syn keyword glslStatement unroll
 syn keyword glslStatement dont_unroll
 syn keyword glslStatement loop
 syn keyword glslStatement dependency_infinite
-syn keyword glslStatement dependency_length
 syn keyword glslStatement flatten
 syn keyword glslStatement dont_flatten
 syn keyword glslStatement branch
@@ -905,6 +904,12 @@ syn keyword glslBuiltinFunction rayQueryGetIntersectionWorldToObjectEXT
 syn keyword glslBuiltinFunction traceRayEXT
 syn keyword glslBuiltinFunction reportIntersectionEXT
 syn keyword glslBuiltinFunction executeCallableEXT
+
+" GL_EXT_control_flow_attributes
+syn keyword glslBuiltinFunction dependency_length
+
+" GL_EXT_nonuniform_qualifier
+syn keyword glslBuiltinFunction nonuniformEXT
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
