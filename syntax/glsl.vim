@@ -300,6 +300,9 @@ syn keyword glslQualifier xfb_buffer
 syn keyword glslQualifier xfb_stride
 syn keyword glslQualifier xfb_offset
 
+" GLSL_EXT_ray_flags_primitive_culling
+syn keyword glslQualifier primitive_culling
+
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
 syn keyword glslBuiltinConstant gl_ScopeDevice
@@ -404,6 +407,10 @@ syn keyword glslBuiltinConstant gl_ShadingRateFlag2VerticalPixelsEXT
 syn keyword glslBuiltinConstant gl_ShadingRateFlag4VerticalPixelsEXT
 syn keyword glslBuiltinConstant gl_ShadingRateFlag2HorizontalPixelsEXT
 syn keyword glslBuiltinConstant gl_ShadingRateFlag4HorizontalPixelsEXT
+
+" GLSL_EXT_ray_flags_primitive_culling
+syn keyword glslBuiltinConstant gl_RayFlagsSkipTrianglesEXT
+syn keyword glslBuiltinConstant gl_RayFlagsSkipAABBEXT
 
 " Built-in Variables
 syn keyword glslBuiltinVariable gl_BackColor

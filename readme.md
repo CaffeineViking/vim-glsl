@@ -28,7 +28,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GL_KHR_vulkan_glsl`
     - [x] `GLSL_EXT_fragment_invocation_density`
     - [x] `GLSL_EXT_fragment_shading_rate`
-    - [ ] `GLSL_EXT_ray_flags_primitive_culling`
+    - [x] `GLSL_EXT_ray_flags_primitive_culling`
     - [ ] `GLSL_EXT_ray_query`
     - [ ] `GLSL_EXT_ray_tracing`
     - [ ] `GLSL_EXT_shader_image_int64`
