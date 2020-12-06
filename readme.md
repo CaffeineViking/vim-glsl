@@ -11,7 +11,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
 * OpenGL Shading Language: all versions from 1.10 to 4.60
     * Added missing `component` layout qualifier
     * Added missing `subroutine` from GLSL 4.6
-* OpenGL ES Shading Language: versions 1.00 and 3.00 (?)
+* OpenGL ES Shading Language: versions 1.00 and 3.00
 * The Vulkan GLSL extensions found in `GL_KHR_vulkan_glsl`:
     * `shaderc`-style `#include` directives
     * `constant_id` and `push_constant` layout qualifiers
@@ -22,7 +22,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     * The `subpassLoad` built-in function for Vulkan
     * Both the `imageBuffer` and `textureBuffer` descriptors
     * And finally `sampler` and `samplerShadow`
-* The following official [KHR/EXT extensions](https://github.com/KhronosGroup/GLSL/tree/master/extensions) from Khronos:
+* The following KHR/EXT extensions from [this](https://github.com/KhronosGroup/GLSL/tree/master/extensions) repository:
     * `GL_KHR_memory_scope_semantics`
     * `GL_KHR_shader_subgroup`
     * `GLSL_EXT_fragment_shading_rate`
