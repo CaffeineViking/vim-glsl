@@ -1,10 +1,10 @@
 # vim-glsl
 
-This plugin adds OpenGL Shading Language (GLSL) syntax highlighting support to Vim. It supports everything in the standard GLSL 4.6 plus a few common KHR/EXT extensions. Among other things, it supports the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if they're technically non-standard). It fixes a few issues with tikhomirov's repository, such as the missing `subroutine` and `component` keywords that should be available in GLSL (even if they aren't used that much).
+This plugin adds OpenGL Shading Language (GLSL) syntax highlighting support to Vim. It supports everything in the standard GLSL 4.6 plus a few common KHR/EXT extensions. Among other things, it supports the `GL_KHR_vulkan_glsl` extension for Vulkan. It also highlights `#include` directives, which are widely used (even if they're technically non-standard). It fixes a few issues with tikhomirov's repository, such as the missing `subroutine` and `component` keywords that should be available in GLSL (even if they're "rare").
 
 If you find anything important missing, feel free to open an issue or (even better) create a PR. Please be aware that no vendor extensions will be accepted into this repository. If they're EXT or KHR extensions though, they are more than welcome! Please see the public [GLSL extensions](https://github.com/KhronosGroup/GLSL/tree/master/extensions) repo.
 
-It applies syntax highlighting to the following [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, `.comp`, `.rayg`, `.rayi`, `.raya`, `.rayh`, `.raym`, `.rayc` (from `GL_EXT_ray_tracing`). `.mesh` will also be supported once/if we get a KHR/EXT extension for mesh shading :-)
+It applies syntax highlighting to the following [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, `.comp`, `.rayg`, `.rayi`, `.raya`, `.rayh`, `.raym`, `.rayc` (from `GL_EXT_ray_tracing`). `.mesh` will also be supported once/if we get a KHR/EXT extension for mesh shading.
 
 ## Supported
 
