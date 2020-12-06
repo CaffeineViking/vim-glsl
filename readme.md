@@ -25,7 +25,6 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
 * The following KHR/EXT extensions from [this](https://github.com/KhronosGroup/GLSL/tree/master/extensions) repository:
     * `GL_KHR_memory_scope_semantics`
     * `GL_KHR_shader_subgroup`
-    * `GLSL_EXT_fragment_shading_rate`
     * `GLSL_EXT_ray_flags_primitive_culling`
     * `GLSL_EXT_ray_query`
     * `GLSL_EXT_ray_tracing`
