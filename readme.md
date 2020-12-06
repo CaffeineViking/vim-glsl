@@ -23,7 +23,6 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     * Both the `imageBuffer` and `textureBuffer` descriptors
     * And finally `sampler` and `samplerShadow`
 * The following KHR/EXT extensions from [this](https://github.com/KhronosGroup/GLSL/tree/master/extensions) repository:
-    * `GL_KHR_memory_scope_semantics`
     * `GL_KHR_shader_subgroup`
     * `GLSL_EXT_ray_flags_primitive_culling`
     * `GLSL_EXT_ray_query`
