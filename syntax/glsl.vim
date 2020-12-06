@@ -188,6 +188,30 @@ syn keyword glslType rayQueryEXT
 " GLSL_EXT_ray_tracing
 syn keyword glslType accelerationStructureEXT
 
+" GLSL_EXT_shader_image_int64
+syn keyword glslType i64image1D
+syn keyword glslType u64image1D
+syn keyword glslType i64image1DArray
+syn keyword glslType u64image1DArray
+syn keyword glslType i64image2D
+syn keyword glslType u64image2D
+syn keyword glslType i64image2DArray
+syn keyword glslType u64image2DArray
+syn keyword glslType i64image2DRect
+syn keyword glslType u64image2DRect
+syn keyword glslType i64image2DMS
+syn keyword glslType u64image2DMS
+syn keyword glslType i64image2DMSArray
+syn keyword glslType u64image2DMSArray
+syn keyword glslType i64image3D
+syn keyword glslType u64image3D
+syn keyword glslType i64imageCube
+syn keyword glslType u64imageCube
+syn keyword glslType i64imageCubeArray
+syn keyword glslType u64imageCubeArray
+syn keyword glslType i64imageBuffer
+syn keyword glslType u64imageBuffer
+
 " Qualifiers
 syn keyword glslQualifier align
 syn keyword glslQualifier attribute
@@ -321,6 +345,10 @@ syn keyword glslQualifier hitAttributeEXT
 syn keyword glslQualifier callableDataEXT
 syn keyword glslQualifier callableDataInEXT
 syn keyword glslQualifier shaderRecordEXT
+
+" GLSL_EXT_shader_image_int64
+syn keyword glslQualifier r64i
+syn keyword glslQualifier r64ui
 
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
