@@ -1,6 +1,12 @@
 The MIT License (MIT)
+=====================
 
-Copyright (c) 2013-2017 Sergey Tikhomirov,
+Original repository and contributions from:
+
+Copyright (c) 2013-2017 Sergey Tikhomirov
+
+additional Vulkan extension contributions:
+
 Copyright (c) 2018-2021 Erik S. V. Jansson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
