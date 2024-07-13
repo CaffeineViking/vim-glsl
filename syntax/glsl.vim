@@ -790,7 +790,6 @@ syn keyword glslBuiltinVariable gl_out
 syn keyword glslBuiltinVariable gl_DrawID
 syn keyword glslBuiltinVariable gl_BaseVertex
 syn keyword glslBuiltinVariable gl_BaseInstance
-syn keyword glslBuiltinVariable gl_PerVertex
 
 " GLSL_EXT_fragment_invocation_density
 syn keyword glslBuiltinVariable gl_FragSizeEXT
@@ -836,8 +835,8 @@ syn keyword glslBuiltinVariable gl_CullMaskEXT
 syn keyword glslBuiltinVariable gl_PrimitivePointIndicesEXT
 syn keyword glslBuiltinVariable gl_PrimitiveLineIndicesEXT
 syn keyword glslBuiltinVariable gl_PrimitiveTriangleIndicesEXT
-syn keyword glslBuiltinVariable gl_MeshPerVertexEXT
-syn keyword glslBuiltinVariable gl_MeshPerPrimitiveEXT
+syn keyword glslBuiltinVariable gl_MeshVerticesEXT
+syn keyword glslBuiltinVariable gl_MeshPrimitivesEXT
 syn keyword glslBuiltinVariable gl_CullPrimitiveEXT
 
 " GLSL_EXT_ray_tracing_position_fetch
