@@ -51,6 +51,9 @@ syn keyword glslStatement partial_count
 " GL_EXT_maximal_reconvergence
 syn keyword glslStatement maximally_reconverges
 
+" GL_EXT_subgroup_uniform_control_flow
+syn keyword glslStatement subgroup_uniform_control_flow
+
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
 syn region  glslCommentL start="//" skip="\\$" end="$" keepend contains=glslTodo,@Spell
