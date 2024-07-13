@@ -41,7 +41,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GL_KHR_memory_scope_semantics`
     - [x] `GL_KHR_shader_subgroup`
     - [x] `GL_KHR_vulkan_glsl`
-    - [ ] `GLSL_EXT_buffer_reference`
+    - [x] `GLSL_EXT_buffer_reference`
     - [ ] `GLSL_EXT_debug_printf`
     - [ ] `GLSL_EXT_demote_to_helper_invocation`
     - [ ] `GLSL_EXT_fragment_shader_barycentric`
