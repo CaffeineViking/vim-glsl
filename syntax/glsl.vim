@@ -790,6 +790,9 @@ syn keyword glslBuiltinVariable gl_MeshPerVertexEXT
 syn keyword glslBuiltinVariable gl_MeshPerPrimitiveEXT
 syn keyword glslBuiltinVariable gl_CullPrimitiveEXT
 
+" GLSL_EXT_ray_tracing_position_fetch
+syn keyword glslBuiltinVariable gl_HitTriangleVertexPositionsEXT
+
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
 syn keyword glslBuiltinFunction EmitVertex
@@ -1108,6 +1111,9 @@ syn keyword glslBuiltinFunction clockRealtimeEXT
 " GLSL_EXT_mesh_shader
 syn keyword glslBuiltinFunction EmitMeshTasksEXT
 syn keyword glslBuiltinFunction SetMeshOutputsEXT
+
+" GLSL_EXT_ray_tracing_position_fetch
+syn keyword glslBuiltinFunction rayQueryGetIntersectionTriangleVertexPositionsEXT
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
