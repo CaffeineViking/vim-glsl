@@ -1062,6 +1062,9 @@ syn keyword glslBuiltinFunction unpackInt4x16
 syn keyword glslBuiltinFunction unpackUint2x16
 syn keyword glslBuiltinFunction unpackUint4x16
 
+" GLSL_EXT_debug_printf
+syn keyword glslBuiltinFunction debugPrintfEXT
+
 " GL_EXT_shader_realtime_clock
 syn keyword glslBuiltinFunction clockRealtime2x32EXT
 syn keyword glslBuiltinFunction clockRealtimeEXT
