@@ -29,6 +29,18 @@ syn keyword glslStatement branch
 " GLSL_EXT_demote_to_helper_invocation
 syn keyword glslStatement demote
 
+" GLSL_EXT_spirv_intrinsics
+syn keyword glslStatement spirv_instruction
+syn keyword glslStatement spirv_execution_mode
+syn keyword glslStatement spirv_execution_mode_id
+syn keyword glslStatement spirv_decorate
+syn keyword glslStatement spirv_decorate_id
+syn keyword glslStatement spirv_decorate_string
+syn keyword glslStatement spirv_type
+syn keyword glslStatement spirv_storage_class
+syn keyword glslStatement spirv_by_reference
+syn keyword glslStatement spirv_literal
+
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
 syn region  glslCommentL start="//" skip="\\$" end="$" keepend contains=glslTodo,@Spell
