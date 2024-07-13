@@ -49,7 +49,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GLSL_EXT_opacity_micromap`
     - [x] `GLSL_EXT_ray_cull_mask`
     - [x] `GLSL_EXT_ray_tracing_position_fetch`
-    - [ ] `GLSL_EXT_shader_tile_image`
+    - [x] `GLSL_EXT_shader_tile_image`
     - [ ] `GLSL_EXT_spirv_intrinsics`
     - [ ] `GLSL_KHR_cooperative_matrix`
     - [ ] `GL_EXT_control_flow_attributes2`

@@ -343,6 +343,11 @@ syn keyword glslType u32vec2
 syn keyword glslType u32vec3
 syn keyword glslType u32vec4
 
+" GLSL_EXT_shader_tile_image
+syn keyword glslType attachmentEXT
+syn keyword glslType iattachmentEXT
+syn keyword glslType uattachmentEXT
+
 " Qualifiers
 syn keyword glslQualifier align
 syn keyword glslQualifier attribute
@@ -350,7 +355,7 @@ syn keyword glslQualifier binding
 syn keyword glslQualifier buffer
 syn keyword glslQualifier ccw
 syn keyword glslQualifier centroid
-syn keyword glslQualifier centroid varying
+syn keyword glslQualifier varying
 syn keyword glslQualifier coherent
 syn keyword glslQualifier column_major
 syn keyword glslQualifier const
@@ -498,6 +503,12 @@ syn keyword glslQualifier pervertexEXT
 syn keyword glslQualifier perprimitiveEXT
 syn keyword glslQualifier taskPayloadSharedEXT
 syn keyword glslQualifier max_primitives
+
+" GLSL_EXT_shader_tile_image
+syn keyword glslQualifier tileImageEXT
+syn keyword glslQualifier non_coherent_color_attachment_readEXT
+syn keyword glslQualifier non_coherent_depth_attachment_readEXT
+syn keyword glslQualifier non_coherent_stencil_attachment_readEXT
 
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
@@ -1114,6 +1125,11 @@ syn keyword glslBuiltinFunction SetMeshOutputsEXT
 
 " GLSL_EXT_ray_tracing_position_fetch
 syn keyword glslBuiltinFunction rayQueryGetIntersectionTriangleVertexPositionsEXT
+
+" GLSL_EXT_shader_tile_image
+syn keyword glslBuiltinFunction colorAttachmentReadEXT
+syn keyword glslBuiltinFunction depthAttachmentReadEXT
+syn keyword glslBuiltinFunction stencilAttachmentReadEXT
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
