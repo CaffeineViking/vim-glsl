@@ -55,7 +55,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GL_EXT_control_flow_attributes2`
     - [x] `GL_EXT_maximal_reconvergence`
     - [x] `GL_EXT_subgroup_uniform_control_flow`
-    - [ ] `GL_EXT_terminate_invocation`
+    - [x] `GL_EXT_terminate_invocation`
 * `texture2D` is highlighted as a type instead of a function
 
 ## Installation
