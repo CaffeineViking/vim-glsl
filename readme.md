@@ -4,7 +4,7 @@ This plugin adds OpenGL Shading Language (GLSL) syntax highlighting support to V
 
 If you find anything important missing, feel free to open an issue or (even better) create a PR. Please be aware that no vendor extensions will be accepted into this repository. If they're EXT or KHR extensions though, they are more than welcome! Please see the public [GLSL extensions](https://github.com/KhronosGroup/GLSL/tree/master/extensions) repo.
 
-It applies syntax highlighting to the following [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, `.comp`, `.rayg`, `.rayi`, `.raya`, `.rayh`, `.raym`, `.rayc` (from `GL_EXT_ray_tracing`). `.mesh` will also be supported once/if we get a KHR/EXT extension for mesh shading.
+It applies syntax highlighting to the following [glslang](https://github.com/KhronosGroup/glslang) file extensions: `.glsl`, `.vert`, `.tesc`, `.tese`, `.geom`, `.frag`, `.comp` and `.rayg`, `.rayi`, `.raya`, `.rayh`, `.raym`, `.rayc` (from `GL_EXT_ray_tracing`) and `.mesh`, `.task` (from `GLSL_EXT_mesh_shader`).
 
 ## Supported
 
