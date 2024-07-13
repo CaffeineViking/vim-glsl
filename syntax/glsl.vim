@@ -26,6 +26,9 @@ syn keyword glslStatement flatten
 syn keyword glslStatement dont_flatten
 syn keyword glslStatement branch
 
+" GLSL_EXT_demote_to_helper_invocation
+syn keyword glslStatement demote
+
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
 syn region  glslCommentL start="//" skip="\\$" end="$" keepend contains=glslTodo,@Spell
