@@ -41,6 +41,13 @@ syn keyword glslStatement spirv_storage_class
 syn keyword glslStatement spirv_by_reference
 syn keyword glslStatement spirv_literal
 
+" GL_EXT_control_flow_attributes2
+syn keyword glslStatement min_iterations
+syn keyword glslStatement max_iterations
+syn keyword glslStatement iteration_multiple
+syn keyword glslStatement peel_count
+syn keyword glslStatement partial_count
+
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
 syn region  glslCommentL start="//" skip="\\$" end="$" keepend contains=glslTodo,@Spell

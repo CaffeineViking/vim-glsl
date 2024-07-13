@@ -52,7 +52,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GLSL_EXT_shader_tile_image`
     - [x] `GLSL_EXT_spirv_intrinsics`
     - [x] `GLSL_KHR_cooperative_matrix`
-    - [ ] `GL_EXT_control_flow_attributes2`
+    - [x] `GL_EXT_control_flow_attributes2`
     - [ ] `GL_EXT_maximal_reconvergence`
     - [ ] `GL_EXT_shader_explicit_arithmetic_types`
     - [ ] `GL_EXT_subgroup_uniform_control_flow`
