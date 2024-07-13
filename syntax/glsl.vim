@@ -360,6 +360,9 @@ syn keyword glslType attachmentEXT
 syn keyword glslType iattachmentEXT
 syn keyword glslType uattachmentEXT
 
+" GLSL_KHR_cooperative_matrix
+syn keyword glslType coopmat
+
 " Qualifiers
 syn keyword glslQualifier align
 syn keyword glslQualifier attribute
@@ -653,6 +656,14 @@ syn keyword glslBuiltinConstant gl_HitKindBackFacingTriangleEXT
 
 " GLSL_EXT_opacity_micromap
 syn keyword glslBuiltinConstant gl_RayFlagsForceOpacityMicromap2StateEXT
+
+" GLSL_KHR_cooperative_matrix
+syn keyword glslBuiltinConstant gl_MatrixUseA
+syn keyword glslBuiltinConstant gl_MatrixUseB
+syn keyword glslBuiltinConstant gl_MatrixUseAccumulator
+syn keyword glslBuiltinConstant gl_CooperativeMatrixLayoutRowMajor
+syn keyword glslBuiltinConstant gl_CooperativeMatrixLayoutColumnMajor
+syn keyword glslBuiltinConstant gl_MatrixOperandsSaturatingAccumulation
 
 " Built-in Variables
 syn keyword glslBuiltinVariable gl_BackColor
@@ -1142,6 +1153,11 @@ syn keyword glslBuiltinFunction rayQueryGetIntersectionTriangleVertexPositionsEX
 syn keyword glslBuiltinFunction colorAttachmentReadEXT
 syn keyword glslBuiltinFunction depthAttachmentReadEXT
 syn keyword glslBuiltinFunction stencilAttachmentReadEXT
+
+" GLSL_KHR_cooperative_matrix
+syn keyword glslBuiltinFunction coopMatLoad
+syn keyword glslBuiltinFunction coopMatStore
+syn keyword glslBuiltinFunction coopMatMulAdd
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
