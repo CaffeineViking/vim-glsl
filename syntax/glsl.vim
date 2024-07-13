@@ -779,6 +779,9 @@ syn keyword glslBuiltinVariable gl_ViewIndex
 syn keyword glslBuiltinVariable gl_BaryCoordEXT
 syn keyword glslBuiltinVariable gl_BaryCoordNoPerspEXT
 
+" GLSL_EXT_ray_cull_mask
+syn keyword glslBuiltinVariable gl_CullMaskEXT
+
 " GLSL_EXT_mesh_shader
 syn keyword glslBuiltinVariable gl_PrimitivePointIndicesEXT
 syn keyword glslBuiltinVariable gl_PrimitiveLineIndicesEXT
