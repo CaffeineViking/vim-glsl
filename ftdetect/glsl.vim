@@ -4,6 +4,6 @@
 
 " Extensions supported by Khronos reference compiler (with one exception, ".glsl")
 " https://github.com/KhronosGroup/glslang
-autocmd! BufNewFile,BufRead *.vert,*.tesc,*.tese,*.glsl,*.geom,*.frag,*.comp,*.rayg,*.rayi,*.raya,*.rayh,*.raym,*.rayc set filetype=glsl
+autocmd! BufNewFile,BufRead *.vert,*.tesc,*.tese,*.glsl,*.geom,*.frag,*.comp,*.rayg,*.rayi,*.raya,*.rayh,*.raym,*.rayc,*.mesh,*.task set filetype=glsl
 
 " vim:set sts=2 sw=2 :

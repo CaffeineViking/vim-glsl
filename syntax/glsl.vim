@@ -464,6 +464,9 @@ syn keyword glslQualifier workgroupcoherent
 syn keyword glslQualifier xfb_buffer
 syn keyword glslQualifier xfb_stride
 syn keyword glslQualifier xfb_offset
+syn keyword glslQualifier local_size_x_id
+syn keyword glslQualifier local_size_y_id
+syn keyword glslQualifier local_size_z_id
 
 " GLSL_EXT_ray_flags_primitive_culling
 syn keyword glslQualifier primitive_culling
@@ -490,6 +493,11 @@ syn keyword glslQualifier buffer_reference_align
 
 " GLSL_EXT_fragment_shader_barycentric
 syn keyword glslQualifier pervertexEXT
+
+" GLSL_EXT_mesh_shader
+syn keyword glslQualifier perprimitiveEXT
+syn keyword glslQualifier taskPayloadSharedEXT
+syn keyword glslQualifier max_primitives
 
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
@@ -726,6 +734,10 @@ syn keyword glslBuiltinVariable gl_WorkGroupID
 syn keyword glslBuiltinVariable gl_WorkGroupSize
 syn keyword glslBuiltinVariable gl_in
 syn keyword glslBuiltinVariable gl_out
+syn keyword glslBuiltinVariable gl_DrawID
+syn keyword glslBuiltinVariable gl_BaseVertex
+syn keyword glslBuiltinVariable gl_BaseInstance
+syn keyword glslBuiltinVariable gl_PerVertex
 
 " GLSL_EXT_fragment_invocation_density
 syn keyword glslBuiltinVariable gl_FragSizeEXT
@@ -763,6 +775,14 @@ syn keyword glslBuiltinVariable gl_ViewIndex
 " GLSL_EXT_fragment_shader_barycentric
 syn keyword glslBuiltinVariable gl_BaryCoordEXT
 syn keyword glslBuiltinVariable gl_BaryCoordNoPerspEXT
+
+" GLSL_EXT_mesh_shader
+syn keyword glslBuiltinVariable gl_PrimitivePointIndicesEXT
+syn keyword glslBuiltinVariable gl_PrimitiveLineIndicesEXT
+syn keyword glslBuiltinVariable gl_PrimitiveTriangleIndicesEXT
+syn keyword glslBuiltinVariable gl_MeshPerVertexEXT
+syn keyword glslBuiltinVariable gl_MeshPerPrimitiveEXT
+syn keyword glslBuiltinVariable gl_CullPrimitiveEXT
 
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
@@ -1078,6 +1098,10 @@ syn keyword glslBuiltinFunction debugPrintfEXT
 " GL_EXT_shader_realtime_clock
 syn keyword glslBuiltinFunction clockRealtime2x32EXT
 syn keyword glslBuiltinFunction clockRealtimeEXT
+
+" GLSL_EXT_mesh_shader
+syn keyword glslBuiltinFunction EmitMeshTasksEXT
+syn keyword glslBuiltinFunction SetMeshOutputsEXT
 
 hi def link glslConditional     Conditional
 hi def link glslRepeat          Repeat
