@@ -48,6 +48,9 @@ syn keyword glslStatement iteration_multiple
 syn keyword glslStatement peel_count
 syn keyword glslStatement partial_count
 
+" GL_EXT_maximal_reconvergence
+syn keyword glslStatement maximally_reconverges
+
 " Comments
 syn keyword glslTodo     contained TODO FIXME XXX NOTE
 syn region  glslCommentL start="//" skip="\\$" end="$" keepend contains=glslTodo,@Spell
