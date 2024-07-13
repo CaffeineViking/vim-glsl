@@ -46,7 +46,7 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GLSL_EXT_demote_to_helper_invocation`
     - [x] `GLSL_EXT_fragment_shader_barycentric`
     - [x] `GLSL_EXT_mesh_shader`
-    - [ ] `GLSL_EXT_opacity_micromap`
+    - [x] `GLSL_EXT_opacity_micromap`
     - [ ] `GLSL_EXT_ray_cull_mask`
     - [ ] `GLSL_EXT_ray_tracing_position_fetch`
     - [ ] `GLSL_EXT_shader_tile_image`

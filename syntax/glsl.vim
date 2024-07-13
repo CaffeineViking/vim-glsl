@@ -628,6 +628,9 @@ syn keyword glslBuiltinConstant gl_RayFlagsCullNoOpaqueEXT
 syn keyword glslBuiltinConstant gl_HitKindFrontFacingTriangleEXT
 syn keyword glslBuiltinConstant gl_HitKindBackFacingTriangleEXT
 
+" GLSL_EXT_opacity_micromap
+syn keyword glslBuiltinConstant gl_RayFlagsForceOpacityMicromap2StateEXT
+
 " Built-in Variables
 syn keyword glslBuiltinVariable gl_BackColor
 syn keyword glslBuiltinVariable gl_BackLightModelProduct
