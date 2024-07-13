@@ -23,9 +23,6 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] Both the `imageBuffer` and `textureBuffer` descriptors
     - [x] And finally `sampler` and `samplerShadow`
 * The following official KHR/EXT extensions are supported:
-    - [x] `GL_KHR_memory_scope_semantics`
-    - [x] `GL_KHR_shader_subgroup`
-    - [x] `GL_KHR_vulkan_glsl`
     - [x] `GLSL_EXT_fragment_invocation_density`
     - [x] `GLSL_EXT_fragment_shading_rate`
     - [x] `GLSL_EXT_ray_flags_primitive_culling`
@@ -41,6 +38,25 @@ It applies syntax highlighting to the following [glslang](https://github.com/Khr
     - [x] `GL_EXT_shader_explicit_arithmetic_types`
     - [x] `GL_EXT_shader_realtime_clock`
     - [x] `GL_EXT_subgroupuniform_qualifier`
+    - [x] `GL_KHR_memory_scope_semantics`
+    - [x] `GL_KHR_shader_subgroup`
+    - [x] `GL_KHR_vulkan_glsl`
+    - [ ] `GLSL_EXT_buffer_reference`
+    - [ ] `GLSL_EXT_debug_printf`
+    - [ ] `GLSL_EXT_demote_to_helper_invocation`
+    - [ ] `GLSL_EXT_fragment_shader_barycentric`
+    - [ ] `GLSL_EXT_mesh_shader`
+    - [ ] `GLSL_EXT_opacity_micromap`
+    - [ ] `GLSL_EXT_ray_cull_mask`
+    - [ ] `GLSL_EXT_ray_tracing_position_fetch`
+    - [ ] `GLSL_EXT_shader_tile_image`
+    - [ ] `GLSL_EXT_spirv_intrinsics`
+    - [ ] `GLSL_KHR_cooperative_matrix`
+    - [ ] `GL_EXT_control_flow_attributes2`
+    - [ ] `GL_EXT_maximal_reconvergence`
+    - [ ] `GL_EXT_shader_explicit_arithmetic_types`
+    - [ ] `GL_EXT_subgroup_uniform_control_flow`
+    - [ ] `GL_EXT_terminate_invocation`
 * `texture2D` is highlighted as a type instead of a function
 
 ## Installation
