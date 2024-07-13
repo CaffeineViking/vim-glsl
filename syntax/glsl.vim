@@ -488,6 +488,9 @@ syn keyword glslQualifier scalar
 syn keyword glslQualifier buffer_reference
 syn keyword glslQualifier buffer_reference_align
 
+" GLSL_EXT_fragment_shader_barycentric
+syn keyword glslQualifier pervertexEXT
+
 " Built-in Constants
 syn keyword glslBuiltinConstant gl_CullDistance
 syn keyword glslBuiltinConstant gl_ScopeDevice
@@ -756,6 +759,10 @@ syn keyword glslBuiltinVariable gl_DeviceIndex
 
 " GL_EXT_multiview
 syn keyword glslBuiltinVariable gl_ViewIndex
+
+" GLSL_EXT_fragment_shader_barycentric
+syn keyword glslBuiltinVariable gl_BaryCoordEXT
+syn keyword glslBuiltinVariable gl_BaryCoordNoPerspEXT
 
 " Built-in Functions
 syn keyword glslBuiltinFunction EmitStreamVertex
